@@ -19,10 +19,11 @@ Switch aSwitch;
         setContentView(R.layout.activity_home);
 
         Bundle mBundle = getIntent().getExtras();
-       String name =  mBundle.getString("Sohel");
-       int id = mBundle.getInt("id");
+        String name =  mBundle.getString("Sohel");
+        int id = mBundle.getInt("id");
         Toast.makeText(this, name + id, Toast.LENGTH_SHORT).show();
-        rgGender = findViewById(R.id.rbGender);
+
+        rgGender = findViewById(R.id.rgGender);
         rbFemale = findViewById(R.id.rbFemale);
         rbMale = findViewById(R.id.rbMale);
         aSwitch = findViewById(R.id.switch1);
